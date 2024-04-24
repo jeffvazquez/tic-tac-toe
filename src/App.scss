@@ -1,0 +1,56 @@
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: calc(48px + 36 * ((100vw - 389px) / (1440 - 389)));
+}
+
+h1 {
+    font-size: calc(32px + 24 * ((100vw - 389px) / (1440 - 389)));
+}
+
+.square::before{
+   content: "\200B";
+}
+.square {
+  background: #fff;
+  border: 1px dashed #bbb;
+  float: left;
+  font-size: 7rem;
+  font-weight: bold;
+  line-height: 7.5rem;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+}
+.square:nth-child(1), 
+.square:nth-child(2), 
+.square:nth-child(3), 
+{
+    border-top: none; 
+}
+
+.square:nth-child(1),
+.square:nth-child(4),
+.square:nth-child(7),
+{
+    border-left: none;
+}
+.square:nth-child(3),
+.square:nth-child(6),
+.square:nth-child(9),
+{
+    border-right: none;
+}
+.square:nth-child(7),
+.square:nth-child(8),
+.square:nth-child(9),
+{
+    border-bottom: none;
+}
+.status {
+    padding: 1rem;
+    margin: 1rem;
+}
